@@ -6,7 +6,24 @@
 class Package : Shipment {
   public:
     Package();
-    Package(double lengthIn, double widthIn, double heightIn, double weightIn, double costPerKgIn);
+    Package(
+      std::string nameS, 
+      std::string addyS, 
+      std::string cityS, 
+      std::string stateS, 
+      std::string zipS, 
+      std::string nameR, 
+      std::string addyR, 
+      std::string cityR, 
+      std::string stateR, 
+      std::string zipR,
+      int shippingCost,
+      double lengthIn, 
+      double widthIn, 
+      double heightIn, 
+      double weightIn, 
+      double costPerKgIn
+    );
     void setShippingCost(double shippingCostIn);
     double calculateCost();
   private:

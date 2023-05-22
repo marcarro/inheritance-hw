@@ -8,7 +8,8 @@ Package::Package() {
   costPerKg = 0.0;
 }
 
-Package::Package(double lengthIn, double widthIn, double heightIn, double weightIn, double costPerKgIn) {
+Package::Package(std::string nameS, std::string addyS, std::string cityS, std::string stateS, std::string zipS, std::string nameR, std::string addyR, std::string cityR, std::string stateR, std::string zipR, int shippingCost, double lengthIn, double widthIn, double heightIn, double weightIn, double costPerKgIn)
+: Shipment(nameS, addyS, cityS, stateS, zipS, nameR, addyR, cityR, stateR, zipR, shippingCost) {
   if (weight < 0 || costPerKg < 0) {
     throw std::invalid_argument("Arguments 'weight' or 'costPerKg' must be positive");
   }

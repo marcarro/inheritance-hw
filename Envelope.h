@@ -6,7 +6,22 @@
 class Envelope : Shipment {
   public:
     Envelope();
-    Envelope(double lengthIn, double widthIn, double extraChargeIn);
+    Envelope(
+      std::string nameS, 
+      std::string addyS, 
+      std::string cityS, 
+      std::string stateS, 
+      std::string zipS, 
+      std::string nameR, 
+      std::string addyR, 
+      std::string cityR, 
+      std::string stateR, 
+      std::string zipR,
+      int shippingCost,
+      double lengthIn, 
+      double widthIn, 
+      double extraChargeIn
+    );
     void setShippingCost(double shippingCostIn);
     double calculateCost();
   private:
