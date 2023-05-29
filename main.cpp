@@ -1,3 +1,6 @@
+// Héctor Marcelo Arroyo Morantte – A00837236
+// Victoria Valentina Marin Dominguez – A00836008
+
 #include <iostream>
 #include "Shipment.h"
 #include "Package.h"
